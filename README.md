@@ -2,6 +2,6 @@
 
 Steps:
 
-npm install
-npm run build
-npm run start
+- npm install
+- npm run build
+- npm run start
