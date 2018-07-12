@@ -8,9 +8,10 @@ const apiRoutes = require('./dist/api');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/dashboard', express.static(path.join(__dirname, './dist/app')));
 //app.use(logRequest);
 
-app.set('port', 6363);
+app.set('port', 8080);
 
 apiRoutes.run(app);
 
